@@ -7,6 +7,7 @@
 - 2026-10-28：Step 1～5 完成並經獨立抽查（有條件通過，2 條必修已修）。總報告 `docs/research/00-summary.md`；因子 36 個在 `factors/factors.yaml`；測試 77 passed。
 - 2026-10-28：Step 6 MVP M1～M3 完成。pytest 146＋9 passed、vitest 30 passed、靜態 build（含 basePath）成功；本機 commit 25db55b。
 - 2026-10-28：已上線 https://chasen8.github.io/quant-factor-research/（repo chasen8/quant-factor-research，Pages build_type=workflow；部署 run 40642037611 test/build/deploy 全 success，8 個網址實測 200）。
+- 2026-10-28：EXP-001（台股低波動）OOS 2019–2026 三條預先登記標準全過（Sharpe 1.24 vs B1 0.94、MCPT p≈0.0005、MDD 25% vs 34%），但 CAGR 13.4% < B1 17.8%，且輸給 0050（CAGR 30%、Sharpe ~1.3）。已知弱點：MCPT 用 Sharpe 對「隨機挑股」的虛無，低波動在機制上就佔優，證據力比 p 值看起來弱。EXP-002 設計要改用更嚴格的統計量（相對 B1 的 alpha 或波動配對的隨機組合）。
 - 之後：使用者下載論文 PDF（scripts/fetch_papers.py）→ 逐篇核對公式；M4 台股真資料等使用者看過 MVP。
 - 已知待辦：論文全文核對（目前公式多為「標準化定義」、多數樣本期間標「待核對」），上線前必做。
 
@@ -24,4 +25,6 @@
 - 2026-10-28｜web 的 npm 一律走 `bash scripts/web.sh ...`：原始碼在 OneDrive 的 `web/`，node_modules/.next/out 只存在鏡像 `C:\trading-data\quant-factors\web-build`；**禁止在 OneDrive 內直接 npm install / create-next-app**｜node_modules 數百 MB，違反大檔不進 OneDrive｜專案搬出 OneDrive 時
 - 2026-10-28｜部署：公開 repo `chasen8/quant-factor-research` ＋ GitHub Pages（Actions：pytest → next build 靜態輸出 → deploy）｜使用者要靜態站；免費 Pages 需公開 repo，與使用者其他站一致｜需要私有時改 Vercel 等
 - 2026-10-28｜示範 JSON（web/public/data，約 5MB，決定性種子）提交進 git｜web 不需 Python 即可 build；CI 簡單｜資料量 > 50MB 或改用真資料時
+- 2026-10-28｜台股價格資料改用 Blave CDN（download.blave.org，交易所原始 OHLCV＋除權息事件，2010 起、含 332 檔下市股、免金鑰、政府資料開放授權），取代 FinMind 作為價格來源；不安裝 Blave 桌面 app（未簽章、含實盤下單功能）｜使用者推薦；含下市股＝價格類策略無存活者偏誤｜CDN 關閉（manifest enabled=false）或條款改變時
+- 2026-10-28｜研究流程改為「一次一個策略、預先登記、OOS 只跑一次、扣成本、MCPT」，撐得住才加下一個因子；實驗記錄在 `docs/experiments/EXP-xxx.md`，結果不得回改登記內容｜使用者要求先別疊因子｜不會推翻
 - 2026-10-28｜圖表統一 ECharts 6＋自寫 hook，不用 lightweight-charts/plotly｜一套函式庫涵蓋所有圖型、免署名義務｜需要專業 K 線互動時
