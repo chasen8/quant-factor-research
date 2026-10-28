@@ -1,0 +1,50 @@
+# 論文全文下載清單
+
+請把 PDF 存到 `C:\trading-data\quant-factors\papers\`（不要放 OneDrive、不會上傳 GitHub），檔名照表格「建議檔名」欄。
+
+統計：高優先 28 篇（被 factors.yaml 引用）、中優先 6 篇（方法論）、低優先 3 篇、不需下載（arXiv 已可取得）2 篇。共 39 篇。
+編號前綴 02a / 02b 代表來源文件（兩份文件的 P-B 編號會重複）。「免費版連結」為來源文件記載的 SSRN／NBER／作者頁等連結，多數未實際開啟驗證，可能仍需登入或回 403。
+
+| 優先序 | ID | 標題 | 作者 | 年份 | DOI 連結 | 免費版連結 | 建議檔名 |
+|---|---|---|---|---|---|---|---|
+| 高 | 02a:P-A01 | Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency | Narasimhan Jegadeesh, Sheridan Titman | 1993 | [10.1111/j.1540-6261.1993.tb04702.x](https://doi.org/10.1111/j.1540-6261.1993.tb04702.x) | — | `02a_P-A01_Jegadeesh_1993.pdf` |
+| 高 | 02a:P-A02 | Time series momentum | Tobias J. Moskowitz, Yao Hua Ooi, Lasse Heje Pedersen | 2012 | [10.1016/j.jfineco.2011.11.003](https://doi.org/10.1016/j.jfineco.2011.11.003) | [連結](https://papers.ssrn.com/abstract=2089463) | `02a_P-A02_Moskowitz_2012.pdf` |
+| 高 | 02a:P-A03 | The 52-Week High and Momentum Investing | Thomas J. George, Chuan-Yang Hwang | 2004 | [10.1111/j.1540-6261.2004.00695.x](https://doi.org/10.1111/j.1540-6261.2004.00695.x) | — | `02a_P-A03_George_2004.pdf` |
+| 高 | 02a:P-A04 | Value and Momentum Everywhere | Clifford S. Asness, Tobias J. Moskowitz, Lasse Heje Pedersen | 2013 | [10.1111/jofi.12021](https://doi.org/10.1111/jofi.12021) | — | `02a_P-A04_Asness_2013.pdf` |
+| 高 | 02a:P-A05 | Momentum crashes | Kent Daniel, Tobias J. Moskowitz | 2016 | [10.1016/j.jfineco.2015.12.002](https://doi.org/10.1016/j.jfineco.2015.12.002) | [連結](https://www.nber.org/papers/w20439) | `02a_P-A05_Daniel_2016.pdf` |
+| 高 | 02a:P-A06 | Individualism and Momentum around the World | Andy C. W. Chui, Sheridan Titman, K. C. John Wei | 2010 | [10.1111/j.1540-6261.2009.01532.x](https://doi.org/10.1111/j.1540-6261.2009.01532.x) | — | `02a_P-A06_Chui_2010.pdf` |
+| 高 | 02a:P-A07 | Momentum and Contrarian Profits Corresponding to the Coincident Economic Indicator on the Taiwan Stock Market | Ching-Ping Wang, Hung-Hsi Huang, Chi-Chung Huang | 2012 | [10.2753/REE1540-496X4801S103](https://doi.org/10.2753/REE1540-496X4801S103) | — | `02a_P-A07_Wang_2012.pdf` |
+| 高 | 02a:P-B01 | Evidence of Predictable Behavior of Security Returns | Narasimhan Jegadeesh | 1990 | [10.1111/j.1540-6261.1990.tb05110.x](https://doi.org/10.1111/j.1540-6261.1990.tb05110.x) | — | `02a_P-B01_Jegadeesh_1990.pdf` |
+| 高 | 02a:P-B02 | Fads, Martingales, and Market Efficiency | Bruce N. Lehmann | 1990 | [10.2307/2937816](https://doi.org/10.2307/2937816) | [連結](https://doi.org/10.3386/w2533) | `02a_P-B02_Lehmann_1990.pdf` |
+| 高 | 02a:P-B03 | Does the Stock Market Overreact? | Werner F. M. De Bondt, Richard Thaler | 1985 | [10.1111/j.1540-6261.1985.tb05004.x](https://doi.org/10.1111/j.1540-6261.1985.tb05004.x) | — | `02a_P-B03_DeBondt_1985.pdf` |
+| 高 | 02a:P-C01 | The Cross-Section of Expected Stock Returns | Eugene F. Fama, Kenneth R. French | 1992 | [10.1111/j.1540-6261.1992.tb04398.x](https://doi.org/10.1111/j.1540-6261.1992.tb04398.x) | — | `02a_P-C01_Fama_1992.pdf` |
+| 高 | 02a:P-C02 | Common risk factors in the returns on stocks and bonds | Eugene F. Fama, Kenneth R. French | 1993 | [10.1016/0304-405X(93)90023-5](https://doi.org/10.1016/0304-405X(93)90023-5) | [連結](http://www.nes.ru/~agoriaev/Papers/Fama-French%205%20factors%20for%20stocks%20and%20vonds%20JFE93.pdf) | `02a_P-C02_Fama_1993.pdf` |
+| 高 | 02a:P-C03 | Contrarian Investment, Extrapolation, and Risk | Josef Lakonishok, Andrei Shleifer, Robert W. Vishny | 1994 | [10.1111/j.1540-6261.1994.tb04772.x](https://doi.org/10.1111/j.1540-6261.1994.tb04772.x) | — | `02a_P-C03_Lakonishok_1994.pdf` |
+| 高 | 02a:P-C04 | The Absence of the Book-to-Market Effect in the Taiwan Stock Market: A Decomposition Approach | Chaoshin Chiao, Weifeng Hung, Chun Yao | 2009 | [10.1111/j.1468-5876.2009.00485.x](https://doi.org/10.1111/j.1468-5876.2009.00485.x) | — | `02a_P-C04_Chiao_2009.pdf` |
+| 高 | 02a:P-E01 | The Cross-Section of Volatility and Expected Returns | Andrew Ang 等 | 2006 | [10.1111/j.1540-6261.2006.00836.x](https://doi.org/10.1111/j.1540-6261.2006.00836.x) | — | `02a_P-E01_Ang_2006.pdf` |
+| 高 | 02a:P-E02 | Betting against beta | Andrea Frazzini, Lasse Heje Pedersen | 2014 | [10.1016/j.jfineco.2013.10.005](https://doi.org/10.1016/j.jfineco.2013.10.005) | [連結](https://www.sciencedirect.com/science/article/pii/S0304405X13002675/pdf) | `02a_P-E02_Frazzini_2014.pdf` |
+| 高 | 02a:P-E03 | Downside Risk | Andrew Ang, Joseph Chen, Yuhang Xing | 2006 | [10.1093/rfs/hhj035](https://doi.org/10.1093/rfs/hhj035) | [連結](https://www.nber.org/papers/w11824) | `02a_P-E03_Ang_2006.pdf` |
+| 高 | 02a:P-E04 | Benchmarks as Limits to Arbitrage: Understanding the Low-Volatility Anomaly | Malcolm Baker, Brendan Bradley, Jeffrey Wurgler | 2011 | [10.2469/faj.v67.n1.4](https://doi.org/10.2469/faj.v67.n1.4) | [連結](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1585031) | `02a_P-E04_Baker_2011.pdf` |
+| 高 | 02b:P-B01 | The Other Side of Value: The Gross Profitability Premium | Robert Novy-Marx | 2013 | [10.1016/j.jfineco.2013.01.003](https://doi.org/10.1016/j.jfineco.2013.01.003) | [連結](https://www.nber.org/papers/w15940) | `02b_P-B01_Novy-Marx_2013.pdf` |
+| 高 | 02b:P-B02 | A Five-Factor Asset Pricing Model | Eugene F. Fama, Kenneth R. French | 2015 | [10.1016/j.jfineco.2014.10.010](https://doi.org/10.1016/j.jfineco.2014.10.010) | — | `02b_P-B02_Fama_2015.pdf` |
+| 高 | 02b:P-B03 | Quality Minus Junk | Clifford S. Asness, Andrea Frazzini, Lasse Heje Pedersen | 2019 | [10.1007/s11142-018-9470-2](https://doi.org/10.1007/s11142-018-9470-2) | [連結](https://papers.ssrn.com/abstract=2312432) | `02b_P-B03_Asness_2019.pdf` |
+| 高 | 02b:P-B04 | Do Stock Prices Fully Reflect Information in Accruals and Cash Flows About Future Earnings? | Richard G. Sloan | 1996 | [10.2308/tar-9608042309](https://doi.org/10.2308/tar-9608042309) | — | `02b_P-B04_Sloan_1996.pdf` |
+| 高 | 02b:P-B05 | Value Investing: The Use of Historical Financial Statement Information to Separate Winners from Losers | Joseph D. Piotroski | 2000 | [10.2307/2672906](https://doi.org/10.2307/2672906) | [連結](https://test2.ivey.uwo.ca/media/3775523/value_investing_the_use_of_historical_financial_statement_information.pdf) | `02b_P-B05_Piotroski_2000.pdf` |
+| 高 | 02b:P-B06 | Digesting Anomalies: An Investment Approach | Kewei Hou, Chen Xue, Lu Zhang | 2015 | [10.1093/rfs/hhu068](https://doi.org/10.1093/rfs/hhu068) | [連結](https://www.nber.org/papers/w18435) | `02b_P-B06_Hou_2015.pdf` |
+| 高 | 02b:P-B07 | Illiquidity and Stock Returns: Cross-Section and Time-Series Effects | Yakov Amihud | 2002 | [10.1016/S1386-4181(01)00024-6](https://doi.org/10.1016/S1386-4181(01)00024-6) | [連結](https://www.cis.upenn.edu/~mkearns/finread/amihud.pdf) | `02b_P-B07_Amihud_2002.pdf` |
+| 高 | 02b:P-B08 | Liquidity and Stock Returns: An Alternative Test | Vinay T. Datar, Narayan Y. Naik, Robert Radcliffe | 1998 | [10.1016/S1386-4181(97)00004-9](https://doi.org/10.1016/S1386-4181(97)00004-9) | — | `02b_P-B08_Datar_1998.pdf` |
+| 高 | 02b:P-B09 | Price Momentum and Trading Volume | Charles M. C. Lee, Bhaskaran Swaminathan | 2000 | [10.1111/0022-1082.00280](https://doi.org/10.1111/0022-1082.00280) | — | `02b_P-B09_Lee_2000.pdf` |
+| 高 | 02b:P-B10 | The High-Volume Return Premium | Simon Gervais, Ron Kaniel, Dan H. Mingelgrin | 2001 | [10.1111/0022-1082.00349](https://doi.org/10.1111/0022-1082.00349) | — | `02b_P-B10_Gervais_2001.pdf` |
+| 中 | 02b:P-B15 | ... and the Cross-Section of Expected Returns | Campbell R. Harvey, Yan Liu, Heqing Zhu | 2016 | [10.1093/rfs/hhv059](https://doi.org/10.1093/rfs/hhv059) | [連結](https://www.nber.org/papers/w20592) | `02b_P-B15_Harvey_2016.pdf` |
+| 中 | 02b:P-B16 | Does Academic Research Destroy Stock Return Predictability? | R. David McLean, Jeffrey Pontiff | 2016 | [10.1111/jofi.12365](https://doi.org/10.1111/jofi.12365) | — | `02b_P-B16_McLean_2016.pdf` |
+| 中 | 02b:P-B17 | Replicating Anomalies | Kewei Hou, Chen Xue, Lu Zhang | 2020 | [10.1093/rfs/hhy131](https://doi.org/10.1093/rfs/hhy131) | — | `02b_P-B17_Hou_2020.pdf` |
+| 中 | 02b:P-B18 | Open Source Cross-Sectional Asset Pricing | Andrew Y. Chen, Tom Zimmermann | 2022 | [10.1561/104.00000112](https://doi.org/10.1561/104.00000112) | [連結](https://papers.ssrn.com/abstract=3604626) | `02b_P-B18_Chen_2022.pdf` |
+| 中 | 02b:P-B19 | Is There a Replication Crisis in Finance? | Theis Ingerslev Jensen, Bryan Kelly, Lasse Heje Pedersen | 2023 | [10.1111/jofi.13249](https://doi.org/10.1111/jofi.13249) | — | `02b_P-B19_Jensen_2023.pdf` |
+| 中 | 02b:P-B20 | The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality | David H. Bailey, Marcos López de Prado | 2014 | [10.3905/jpm.2014.40.5.094](https://doi.org/10.3905/jpm.2014.40.5.094) | [連結](https://papers.ssrn.com/abstract=2460551) | `02b_P-B20_Bailey_2014.pdf` |
+| 低 | 02b:P-B11 | Liquidity Risk and Expected Stock Returns | L'uboš Pástor, Robert F. Stambaugh | 2003 | [10.1086/374184](https://doi.org/10.1086/374184) | [連結](https://www.cis.upenn.edu/~mkearns/finread/pastor.pdf) | `02b_P-B11_Pastor_2003.pdf` |
+| 低 | 02b:P-B13 | Empirical Asset Pricing via Machine Learning | Shihao Gu, Bryan Kelly, Dacheng Xiu | 2020 | [10.1093/rfs/hhaa009](https://doi.org/10.1093/rfs/hhaa009) | — | `02b_P-B13_Gu_2020.pdf` |
+| 低 | 02b:P-B21 | Just How Much Do Individual Investors Lose by Trading? | Brad M. Barber 等 | 2009 | [10.1093/rfs/hhn046](https://doi.org/10.1093/rfs/hhn046) | [連結](https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/justhowmuchdoindividualinvestorslose_rfs_2009.pdf) | `02b_P-B21_Barber_2009.pdf` |
+| 不需下載（已可取得） | 02b:P-B12 | 101 Formulaic Alphas | Zura Kakushadze | 2016 | [10.1002/wilm.10525](https://doi.org/10.1002/wilm.10525) | [連結](https://arxiv.org/abs/1601.00991) | `02b_P-B12_Kakushadze_2016.pdf` |
+| 不需下載（已可取得） | 02b:P-B14 | Generating Synergistic Formulaic Alpha Collections via Reinforcement Learning | Shuo Yu 等 | 2023 | [10.1145/3580305.3599831](https://doi.org/10.1145/3580305.3599831) | [連結](https://arxiv.org/abs/2306.12964) | `02b_P-B14_Yu_2023.pdf` |
+
+下載完成後告訴我，我會逐篇核對公式並把「標準化定義」升級為「原文公式」。

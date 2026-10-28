@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+web/.next/
+web/out/
+*.tsbuildinfo
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Never commit raw market data or paper PDFs (copyright / size); they live in C:\trading-data\quant-factors\
+*.parquet
+*.duckdb
+*.pdf
+data/raw/

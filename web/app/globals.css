@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* 深淺色以 data-theme 切換；漲跌色以 data-updown 切換（預設跟隨市場）。 */
+:root {
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-2: #f0f2f5;
+  --line: #dfe3e8;
+  --fg: #1a2230;
+  --muted: #5d6877;
+  --accent: #1d4ed8;
+  --accent-soft: #e6edff;
+  --accent-fg: #ffffff;
+  --demo: #8a5a00;
+  --demo-bg: #fff4d6;
+  --demo-line: #f0d28a;
+  --ok: #17734a;
+  --ok-bg: #e2f5ea;
+  --warn: #8a5a00;
+  --warn-bg: #fff1cc;
+  --bad: #b3261e;
+  --bad-bg: #fde8e6;
+  --up: #d93636;
+  --down: #1a9a5a;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0e1218;
+  --surface: #161b22;
+  --surface-2: #1d242d;
+  --line: #2b3340;
+  --fg: #e6e9ee;
+  --muted: #9aa5b4;
+  --accent: #7aa2ff;
+  --accent-soft: #1c2a4a;
+  --accent-fg: #0e1218;
+  --demo: #f0c060;
+  --demo-bg: #3a2d10;
+  --demo-line: #6b5420;
+  --ok: #55d391;
+  --ok-bg: #12301f;
+  --warn: #f0c060;
+  --warn-bg: #3a2d10;
+  --bad: #ff8a80;
+  --bad-bg: #3b1714;
+  color-scheme: dark;
+}
+
+[data-updown="red-up"] { --up: #d93636; --down: #1a9a5a; }
+[data-updown="green-up"] { --up: #1a9a5a; --down: #d93636; }
+[data-theme="dark"][data-updown="red-up"] { --up: #ff6b6b; --down: #3ccf86; }
+[data-theme="dark"][data-updown="green-up"] { --up: #3ccf86; --down: #ff6b6b; }
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accentsoft: var(--accent-soft);
+  --color-accentfg: var(--accent-fg);
+  --color-demo: var(--demo);
+  --color-demobg: var(--demo-bg);
+  --color-demoline: var(--demo-line);
+  --color-ok: var(--ok);
+  --color-okbg: var(--ok-bg);
+  --color-warn: var(--warn);
+  --color-warnbg: var(--warn-bg);
+  --color-bad: var(--bad);
+  --color-badbg: var(--bad-bg);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+html { background: var(--bg); }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num, td.num, .tabular { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+code, pre { font-family: var(--font-mono); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+
+/* 簡易 Python 語法上色 */
+.tok-kw { color: #a626a4; }
+.tok-str { color: #50a14f; }
+.tok-com { color: #8a93a0; font-style: italic; }
+.tok-num { color: #b76b01; }
+.tok-fn { color: #4078f2; }
+[data-theme="dark"] .tok-kw { color: #d7a2e8; }
+[data-theme="dark"] .tok-str { color: #98d482; }
+[data-theme="dark"] .tok-num { color: #f0b365; }
+[data-theme="dark"] .tok-fn { color: #82aaff; }
+
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
