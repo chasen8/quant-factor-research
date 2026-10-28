@@ -8,6 +8,7 @@
 - 2026-10-28：Step 6 MVP M1～M3 完成。pytest 146＋9 passed、vitest 30 passed、靜態 build（含 basePath）成功；本機 commit 25db55b。
 - 2026-10-28：已上線 https://chasen8.github.io/quant-factor-research/（repo chasen8/quant-factor-research，Pages build_type=workflow；部署 run 40642037611 test/build/deploy 全 success，8 個網址實測 200）。
 - 2026-10-28：EXP-001（台股低波動）OOS 2019–2026 三條預先登記標準全過（Sharpe 1.24 vs B1 0.94、MCPT p≈0.0005、MDD 25% vs 34%），但 CAGR 13.4% < B1 17.8%，且輸給 0050（CAGR 30%、Sharpe ~1.3）。已知弱點：MCPT 用 Sharpe 對「隨機挑股」的虛無，低波動在機制上就佔優，證據力比 p 值看起來弱。EXP-002 設計要改用更嚴格的統計量（相對 B1 的 alpha 或波動配對的隨機組合）。
+- 2026-10-28：EXP-002（幣圈 3 週動能，Binance 成交額前 30、只做多、週調倉）OOS 2022–2026 三條全沒過：策略 CAGR −58%／Sharpe −0.68，B1（前 30 等權）−48%／−0.44，BTC 買進持有 +13%／0.50；MCPT p=0.93。IS 有過 P1、P2，但仍輸 BTC。主導結論：成交額前 30 的山寨幣籃子 2022–2026 跌約 95%，BTC 漲 80%，選幣因子救不了籃子本身。B1 逐年報酬已用原始 zip 獨立重算吻合。已知瑕疵：穩定幣 U（UUSDT）不在排除清單，2026 年有 29 週進池（不影響結論）。
 - 之後：使用者下載論文 PDF（scripts/fetch_papers.py）→ 逐篇核對公式；M4 台股真資料等使用者看過 MVP。
 - 已知待辦：論文全文核對（目前公式多為「標準化定義」、多數樣本期間標「待核對」），上線前必做。
 
@@ -27,4 +28,6 @@
 - 2026-10-28｜示範 JSON（web/public/data，約 5MB，決定性種子）提交進 git｜web 不需 Python 即可 build；CI 簡單｜資料量 > 50MB 或改用真資料時
 - 2026-10-28｜台股價格資料改用 Blave CDN（download.blave.org，交易所原始 OHLCV＋除權息事件，2010 起、含 332 檔下市股、免金鑰、政府資料開放授權），取代 FinMind 作為價格來源；不安裝 Blave 桌面 app（未簽章、含實盤下單功能）｜使用者推薦；含下市股＝價格類策略無存活者偏誤｜CDN 關閉（manifest enabled=false）或條款改變時
 - 2026-10-28｜研究流程改為「一次一個策略、預先登記、OOS 只跑一次、扣成本、MCPT」，撐得住才加下一個因子；實驗記錄在 `docs/experiments/EXP-xxx.md`，結果不得回改登記內容｜使用者要求先別疊因子｜不會推翻
+- 2026-10-28｜加密貨幣實驗資料用 Binance 公開歷史檔（data.binance.vision 現貨日 K，免金鑰、含已下架幣、CHECKSUM 驗證），存 `C:\trading-data\quant-factors\binance-spot\`；Blave CDN 只有台股｜使用者要「先試試加密貨幣」；免費且無存活者偏誤（限 Binance 上架過的幣）｜Binance 停止提供或條款禁止研究用途時
+- 2026-10-28｜EXP-002 起，MCPT 統計量改用「相對 B1 的超額報酬」，並把市場代表標的（台股 0050／幣圈 BTC）列入合格標準｜EXP-001 的 Sharpe 統計量在機制上偏袒低波動；打不贏買進持有就沒有實用價值｜不會推翻
 - 2026-10-28｜圖表統一 ECharts 6＋自寫 hook，不用 lightweight-charts/plotly｜一套函式庫涵蓋所有圖型、免署名義務｜需要專業 K 線互動時
