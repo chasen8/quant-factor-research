@@ -5,7 +5,9 @@
 
 ## 目前狀態
 - 2026-10-28：Step 1～5 完成並經獨立抽查（有條件通過，2 條必修已修）。總報告 `docs/research/00-summary.md`；因子 36 個在 `factors/factors.yaml`；測試 77 passed。
-- 下一步：等使用者回覆 00-summary 第 7 節 5 個確認事項 → 開始 Step 6 MVP（05 第 9 節 M1～M3）。
+- 2026-10-28：Step 6 MVP M1～M3 完成。pytest 146＋9 passed、vitest 30 passed、靜態 build（含 basePath）成功；本機 commit 25db55b。
+- 2026-10-28：已上線 https://chasen8.github.io/quant-factor-research/（repo chasen8/quant-factor-research，Pages build_type=workflow；部署 run 40642037611 test/build/deploy 全 success，8 個網址實測 200）。
+- 之後：使用者下載論文 PDF（scripts/fetch_papers.py）→ 逐篇核對公式；M4 台股真資料等使用者看過 MVP。
 - 已知待辦：論文全文核對（目前公式多為「標準化定義」、多數樣本期間標「待核對」），上線前必做。
 
 ## 決策記錄
