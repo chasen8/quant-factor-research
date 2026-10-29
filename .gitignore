@@ -22,3 +22,6 @@ web/out/
 *.duckdb
 *.pdf
 data/raw/
+
+# 使用者放的參考截圖（版權屬原作者，不進公開 repo）
+new/
