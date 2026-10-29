@@ -16,4 +16,5 @@
 - 全域準則（環境坑、派工、判斷、維護）：`C:\Users\chris\.claude\CLAUDE.md` 會自動載入，衝突時本檔優先。
 - 決策與進度：`docs/project-charter.md`。
 - 本專案踩坑：`docs/lessons.md`。
+- 給 Codex／其他 AI 的濃縮守則：`AGENTS.md`（改本檔或全域規則時同步它）。
 - 因子定義唯一來源：`factors/factors.yaml`（直接手改，不要重跑 trading-data 裡的生成腳本）；測試：`C:\trading-data\quant-factors\venv\Scripts\python.exe -m pytest tests -q`。
